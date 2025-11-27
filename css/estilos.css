@@ -1,0 +1,33 @@
+
+      body { font-family: sans-serif; padding: 20px; }
+      .form-group { margin-bottom: 15px; }
+      label { display: block; margin-bottom: 5px; font-weight: bold; }
+      
+      .phone-container { display: flex; align-items: center; }
+      .prefix { 
+        background-color: #eee; 
+        padding: 6px 10px; 
+        border: 1px solid #ccc; 
+        border-right: none; 
+        color: #555;
+      }
+      .phone-input { border: 1px solid #ccc; padding: 6px; }
+
+      .password-container { display: flex; align-items: center; }
+      .toggle-btn {
+        margin-left: 10px; 
+        cursor: pointer;
+        background: none;
+        border: none;
+        color: #007BFF; 
+        font-size: 0.9rem;
+        text-decoration: underline;
+        padding: 0;
+      }
+      .toggle-btn:hover { color: #0056b3; }
+      
+
+      input[type="text"], input[type="email"], input[type="password"] {
+          padding: 6px;
+          border: 1px solid #ccc;
+      }

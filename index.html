@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registro de Usuario</title>
+    <link rel="stylesheet" href="css\estilos.css">
+    <script src="main.js">
+      
+    </script>
+  </head>
+  <body>
+    <h1>Registro de Usuario</h1>
+    <form>
+      
+      <div class="form-group">
+        <label for="username">Nombre de usuario:</label>
+        <input type="text" id="username" name="username" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required />
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Número telefónico (Bolivia):</label>
+        <div class="phone-container">
+          <span class="prefix">+591</span>
+          <input 
+            type="tel" 
+            id="phone" 
+            name="phone" 
+            class="phone-input" 
+            placeholder="70000000" 
+            maxlength="8"
+            required 
+          />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Contraseña:</label>
+        <div class="password-container">
+          <input type="password" id="password" name="password" required />
+          <button type="button" id="toggleBtn" class="toggle-btn" onclick="togglePassword()">mostrar</button>
+        </div>
+        <small style="color: grey; font-size: 0.8em;">(Mínimo 4 caracteres, solo letras)</small>
+      </div>
+
+      <input
+        type="submit"
+        value="Registrarse"
+        onclick="validateForm(); return false;"
+        style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; cursor: pointer; margin-top: 10px;"
+      />
+    </form>
+  </body>
+</html>
